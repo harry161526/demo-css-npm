@@ -1,14 +1,5 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-var React = require('react');
-var PropTypes = require('prop-types');
-
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
-var PropTypes__default = /*#__PURE__*/_interopDefaultLegacy(PropTypes);
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function styleInject(css, ref) {
   if ( ref === void 0 ) ref = {};
@@ -47,17 +38,17 @@ const Button = ({
   isDisabled
 }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-  return /*#__PURE__*/React__default["default"].createElement("button", {
+  return /*#__PURE__*/React.createElement("button", {
     type: "button",
     className: ['storybook-button', `storybook-button--${size}`, mode].join(' '),
     disabled: isDisabled
   }, children);
 };
 Button.propTypes = {
-  children: PropTypes__default["default"].oneOfType([PropTypes__default["default"].arrayOf(PropTypes__default["default"].node), PropTypes__default["default"].node]).isRequired,
-  primary: PropTypes__default["default"].bool,
-  size: PropTypes__default["default"].oneOf(['small', 'medium', 'large']),
-  isDisabled: PropTypes__default["default"].bool
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  primary: PropTypes.bool,
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  isDisabled: PropTypes.bool
 };
 Button.defaultProps = {
   primary: true,
@@ -70,4 +61,4 @@ var index = /*#__PURE__*/Object.freeze({
   'default': Button
 });
 
-exports.Button = index;
+export { index as Button };

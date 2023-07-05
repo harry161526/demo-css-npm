@@ -1,5 +1,5 @@
 import Button from './src/Components/Button';
 
-export {
+export default {
   Button
 }

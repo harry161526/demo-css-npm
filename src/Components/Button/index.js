@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './button.css';
 
-const Button = ({
+export const Button = ({
   children,
   primary,
   size,
@@ -35,5 +35,3 @@ Button.defaultProps = {
   size: 'medium',
   isDisabled: false
 }
-
-export default Button;

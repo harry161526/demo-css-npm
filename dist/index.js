@@ -65,9 +65,4 @@ Button.defaultProps = {
   isDisabled: false
 };
 
-var index = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': Button
-});
-
-exports.Button = index;
+exports.Button = Button;
